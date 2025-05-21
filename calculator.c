@@ -1,7 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    int a = 5, b = 3;
+    int a = 0, b = 0;
+
+    // Take input from user
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
     printf("Sum: %d\n", a + b);
     printf("Difference: %d\n", a - b);
     printf("Product: %d\n", a * b);
