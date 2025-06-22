@@ -11,7 +11,7 @@ int main() {
         scanf("%d %d", &a, &b);
 
         // Ask for operation
-        printf("Choose operation (+ - *): ");
+        printf("Choose operation (+ - * /): ");
         scanf(" %c", &op);  // Space before %c skips newline
 
         // Perform the chosen operation
@@ -27,6 +27,14 @@ int main() {
             case '*':
                 result = a * b;
                 printf("Result: %d\n", result);
+                break;
+            case '/':
+                if (b == 0) {
+                    printf("Error: Division by zero\n");
+                } else {
+                    result = a / b;
+                    printf("Result: %d\n", result);
+                }
                 break;
             default:
                 printf("Invalid operation.\n");
