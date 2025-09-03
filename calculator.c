@@ -46,6 +46,6 @@ int main() {
         scanf(" %c", &again);
     }
 
-    printf("Goodbye!\n");
+    printf("Goodbye! Thank you!\n");
     return 0;
 }
